@@ -71,7 +71,7 @@ var sign_flag = false;
 function Check_signup_vaildate() {
 
         for (var i = 0; i < account.length; i++) {
-            if (account[i].Email.includes(sign_inputs[0].value.toLowerCase()) || account[i].Passoword.includes(sign_inputs[1].value.toLowerCase())) {
+            if (account[i].Email.includes(sign_inputs[0].value.toLowerCase()) || account[i].Passoword.includes(sign_inputs[1].value.toLowerCase()) || sign_inputs[0].value == "" || sign_inputs[1].value == "") {
                 sign_flag = true;
                 break;
             } else{
